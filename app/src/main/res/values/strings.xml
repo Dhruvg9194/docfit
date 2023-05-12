@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">MLKit-Vision</string>
+    <string name="java_entry_title" translatable="false">Run the ML Kit quickstart written in Java</string>
+    <string name="kotlin_entry_title" translatable="false">Run the ML Kit quickstart written in Kotlin</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="permission_camera_rationale" translatable="false">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission" translatable="false">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error" translatable="false">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="toggle_turn_on" translatable="false">Front</string>
+    <string name="toggle_turn_off" translatable="false">Back</string>
+    <string name="desc_camera_source_activity" translatable="false">AI Yoga</string>
+    <string name="desc_still_image_activity" translatable="false">Vision detectors demo with a still image</string>
+    <string name="desc_camerax_live_preview_activity" translatable="false">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
+    <string name="desc_cameraxsource_demo_activity" translatable="false">Object detection with custom classifier using ML Kit CameraXSource API. Note that CameraX is only supported on API 21+</string>
+    <string name="download_error" translatable="false">Download error</string>
+    <string name="start_over" translatable="false">Start over</string>
+    <string name="menu_item_settings" translatable="false">Settings</string>
+    <string name="select_image" translatable="false">Select image</string>
+    <string name="custom_object_detection" translatable="false">Custom Object Detector</string>
+
+    <!-- Settings related strings. -->
+    <string name="pref_screen" translatable="false">ps</string>
+    <string name="pref_screen_title_live_preview" translatable="false">Live preview settings</string>
+    <string name="pref_screen_title_still_image" translatable="false">Still image settings</string>
+    <string name="pref_screen_title_camerax_live_preview" translatable="false">CameraX live preview settings</string>
+    <string name="pref_screen_title_cameraxsource_demo" translatable="false">CameraXSource live preview settings</string>
+    <string name="pref_category_info" translatable="false">Detection Info</string>
+    <string name="pref_category_face_detection" translatable="false">Face Detection</string>
+    <string name="pref_category_object_detection" translatable="false">Object Detection / Custom Object Detection</string>
+    <string name="pref_category_automl" translatable="false">AutoML Image Labeling</string>
+    <string name="pref_category_pose_detection" translatable="false">Pose Detection</string>
+    <string name="pref_category_segmentation" translatable="false">Selfie Segmentation</string>
+    <string name="pref_category_text_recognition" translatable="false">Text Recognition</string>
+
+    <!-- Strings for camera settings. -->
+    <string name="pref_category_key_camera" translatable="false">pckc</string>
+    <string name="pref_category_title_camera" translatable="false">Camera</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+    <string name="pref_key_camerax_rear_camera_target_resolution" translatable="false">crctas</string>
+    <string name="pref_key_camerax_front_camera_target_resolution" translatable="false">cfctas</string>
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_title_rear_camera_preview_size" translatable="false">Rear camera preview size</string>
+    <string name="pref_title_front_camera_preview_size" translatable="false">Front camera preview size</string>
+    <string name="pref_title_camerax_rear_camera_target_resolution" translatable="false">CameraX rear camera target resolution</string>
+    <string name="pref_title_camerax_front_camera_target_resolution" translatable="false">CameraX front camera target resolution</string>
+    <string name="pref_title_camera_live_viewport" translatable="false">Enable live viewport</string>
+    <string name="pref_summary_camera_live_viewport" translatable="false">Do not block camera preview drawing on detection</string>
+
+    <!-- Strings for info preference. -->
+    <string name="pref_title_info_hide" translatable="false">Hide detection info</string>
+    <string name="pref_key_info_hide" translatable="false">ih</string>
+
+    <!-- Strings for text recognition preference. -->
+    <string name="pref_title_group_recognized_text_in_blocks" translatable="false">Group recognized text in paragraphs</string>
+    <string name="pref_key_group_recognized_text_in_blocks" translatable="false">grtib</string>
+    <string name="pref_title_show_language_tag" translatable="false">Show language identified</string>
+    <string name="pref_key_show_language_tag" translatable="false">slt</string>
+    <string name="pref_title_show_text_confidence" translatable="false">Show confidence score</string>
+    <string name="pref_key_show_text_confidence" translatable="false">stc</string>
+
+    <!-- Strings for object detector enable multiple objects preference. -->
+    <string name="pref_title_object_detector_enable_multiple_objects" translatable="false">Enable multiple objects</string>
+    <string name="pref_key_live_preview_object_detector_enable_multiple_objects" translatable="false">lpodemo</string>
+    <string name="pref_key_still_image_object_detector_enable_multiple_objects" translatable="false">siodemo</string>
+
+    <!-- Strings for object detector enable classification preference. -->
+    <string name="pref_title_object_detector_enable_classification" translatable="false">Enable classification</string>
+    <string name="pref_key_live_preview_object_detector_enable_classification" translatable="false">lpodec</string>
+    <string name="pref_key_still_image_object_detector_enable_classification" translatable="false">siodec</string>
+
+    <!-- Strings for face detector landmark mode preference. -->
+    <string name="pref_title_face_detector_landmark_mode" translatable="false">Landmark mode</string>
+    <string name="pref_key_live_preview_face_detection_landmark_mode" translatable="false">lpfdlm</string>
+    <string name="pref_entries_face_detector_landmark_mode_no_landmarks" translatable="false">No landmarks</string>
+    <string name="pref_entries_face_detector_landmark_mode_all_landmarks" translatable="false">All landmarks</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#LandmarkMode -->
+    <string name="pref_entry_values_face_detector_landmark_mode_no_landmarks" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_landmark_mode_all_landmarks" translatable="false">2</string>
+
+    <!-- Strings for face detector contour mode preference. -->
+    <string name="pref_title_face_detector_contour_mode" translatable="false">Contour mode</string>
+    <string name="pref_key_live_preview_face_detection_contour_mode" translatable="false">lpfdcm</string>
+    <string name="pref_entries_face_detector_contour_mode_no_contours" translatable="false">No contours</string>
+    <string name="pref_entries_face_detector_contour_mode_all_contours" translatable="false">All contours</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#ContourMode -->
+    <string name="pref_entry_values_face_detector_contour_mode_no_contours" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_contour_mode_all_contours" translatable="false">2</string>
+
+    <!-- Strings for face detector classification mode preference. -->
+    <string name="pref_title_face_detector_classification_mode" translatable="false">Classification mode</string>
+    <string name="pref_key_live_preview_face_detection_classification_mode" translatable="false">lpfdcfm</string>
+    <string name="pref_entries_face_detector_classification_mode_no_classifications" translatable="false">No classifications</string>
+    <string name="pref_entries_face_detector_classification_mode_all_classifications" translatable="false">All classifications</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#ClassificationMode -->
+    <string name="pref_entry_values_face_detector_classification_mode_no_classifications" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_classification_mode_all_classifications" translatable="false">2</string>
+
+    <!-- Strings for face detector performance mode preference. -->
+    <string name="pref_title_face_detector_performance_mode" translatable="false">Performance mode</string>
+    <string name="pref_key_live_preview_face_detection_performance_mode" translatable="false">lpfdpm</string>
+    <string name="pref_entries_face_detector_performance_mode_fast" translatable="false">Fast</string>
+    <string name="pref_entries_face_detector_performance_mode_accurate" translatable="false">Accurate</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#PerformanceMode -->
+    <string name="pref_entry_values_face_detector_performance_mode_fast" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_performance_mode_accurate" translatable="false">2</string>
+
+    <!-- Strings for face detector face tracking preference. -->
+    <string name="pref_title_face_detector_face_tracking" translatable="false">Face tracking</string>
+    <string name="pref_key_live_preview_face_detection_face_tracking" translatable="false">lpfdft</string>
+
+    <!-- Strings for face detector min face size preference. -->
+    <string name="pref_title_face_detector_min_face_size" translatable="false">Minimum face size</string>
+    <string name="pref_key_live_preview_face_detection_min_face_size" translatable="false">lpfdmfs</string>
+    <string name="pref_dialog_message_face_detector_min_face_size" translatable="false">Proportion of the head width to the image width, and the valid value range is [0.0, 1.0]</string>
+    <string name="pref_toast_invalid_min_face_size" translatable="false">Minimum face size must be a float value and in the range [0.0, 1.0]</string>
+
+    <!-- Strings for pose detector performance mode preference. -->
+    <string name="pref_title_pose_detector_performance_mode" translatable="false">Performance mode</string>
+    <string name="pref_key_live_preview_pose_detection_performance_mode" translatable="false">lppdpm</string>
+    <string name="pref_key_still_image_pose_detection_performance_mode" translatable="false">sipdpm</string>
+    <string name="pref_entries_pose_detector_performance_mode_fast" translatable="false">Fast</string>
+    <string name="pref_entries_pose_detector_performance_mode_accurate" translatable="false">Accurate</string>
+    <string name="pref_entry_values_pose_detector_performance_mode_fast" translatable="false">1</string>
+    <string name="pref_entry_values_pose_detector_performance_mode_accurate" translatable="false">2</string>
+
+    <!-- Strings for pose detector prefer gpu preference. -->
+    <string name="pref_title_pose_detector_prefer_gpu" translatable="false">Prefer using GPU</string>
+    <string name="pref_key_pose_detector_prefer_gpu" translatable="false">pdpg</string>
+    <string name="pref_summary_pose_detector_prefer_gpu" translatable="false">If enabled, GPU will be used as long as it is available, stable and returns correct results. In this case, the detector will not check if GPU is really faster than CPU.</string>
+
+    <!-- Strings for pose detector showInFrameLikelihood preference. -->
+    <string name="pref_title_pose_detector_show_in_frame_likelihood" translatable="false">Show in-frame likelihood</string>
+    <string name="pref_key_live_preview_pose_detector_show_in_frame_likelihood" translatable="false">lppdsifl</string>
+    <string name="pref_key_still_image_pose_detector_show_in_frame_likelihood" translatable="false">sipdsifl</string>
+
+    <!-- Strings for pose detector z value visualization preference. -->
+    <string name="pref_title_pose_detector_visualize_z" translatable="false">Visualize z value</string>
+    <string name="pref_key_pose_detector_visualize_z" translatable="false">pdvz</string>
+    <string name="pref_title_pose_detector_rescale_z" translatable="false">Rescale z value for visualization</string>
+    <string name="pref_key_pose_detector_rescale_z" translatable="false">pdrz</string>
+
+    <!-- Strings for pose classification preference. -->
+    <string name="pref_title_pose_detector_run_classification" translatable="false">Run Classification</string>
+    <string name="pref_key_pose_detector_run_classification" translatable="false">pdrc</string>
+    <string name="pref_summary_pose_detector_run_classification" translatable="false">Classify squat and pushup poses. Count reps in streaming mode. To get the best classification results based on the current sample data, face the camera side way and make sure your full body is in the frame.</string>
+
+    <!-- Strings for segmentation preference. -->
+    <string name="pref_title_segmentation_raw_size_mask" translatable="false">Enable raw size mask</string>
+    <string name="pref_key_segmentation_raw_size_mask" translatable="false">srsm</string>
+
+    <string name="pref_group_title_face_mesh" translatable="false">Face Mesh Detection</string>
+    <string name="pref_title_face_mesh_use_case" translatable="false">Use Case</string>
+    <string name="pref_key_face_mesh_use_case" translatable="false">face_mesh_use_case</string>
+
+
+    <string name="diet_tips_head">
+        25 Simple Tips to Make Your Diet Healthier :
+    </string>
+    <string name="diet_tips_body">
+        \n
+        1.	Slow down the pace of eating food.\n
+        2.	Choose whole grain bread instead of refined.\n
+        3. Add Greek yogurt to your diet.\n
+        4. Don’t shop without a list and when you are hungry.\n
+        5. Eat eggs,in breakfast to get protein faster.\n
+        6. Increase your protein intake.\n
+        7. Drink enough water.\n
+        8. Bake or roast instead of grilling or frying.\n
+        9. Take omega-3 and vitamin D supplements.\n
+        10. Replace your favorite fast food restaurant.\n
+        11. Try at least one new healthy recipe per week.\n
+        12. Choose baked potatoes over french fries.\n
+        13. Eat your greens first.\n
+        14. Eat your fruits instead of drinking them.\n
+        15. Cook at home more often.\n
+        16. Become more active.\n
+        17. Replace sugary beverages with sparkling water.\n
+        18. Stay away from “diet” foods.\n
+        19. Get a good night’s sleep.\n
+        20. Eat fresh berries instead of dried ones.\n
+        21. Choose popcorn instead of chips.\n
+        22. Choose healthy oils.\n
+        23. Eat from smaller plates.\n
+        24. Get the salad dressing on the side.\n
+        25. Drink black coffee instead of tea.\n
+    </string>
+    <string name="Key_facts_body">
+        •	A healthy diet helps to protect against malnutrition in all its forms, as well as noncommunicable diseases (NCDs), including such as diabetes, heart disease, stroke and cancer.\n
+    •	Unhealthy diet and lack of physical activity are leading global risks to health.\n
+    •	Healthy dietary practices start early in life – breastfeeding fosters healthy growth and improves cognitive development, and may have longer term health benefits such as reducing the risk of becoming overweight or obese and developing NCDs later in life.\n
+    •	Energy intake (calories) should be in balance with energy expenditure. To avoid unhealthy weight gain, total fat should not exceed 30% of total energy intake (1, 2, 3). Intake of saturated fats should be less than 10% of total energy intake, and intake of trans-fats less than 1% of total energy intake, with a shift in fat consumption away from saturated fats and trans-fats to unsaturated fats (3), and towards the goal of eliminating industrially-produced trans-fats (4, 5, 6).\n
+    •	Limiting intake of free sugars to less than 10% of total energy intake (2, 7) is part of a healthy diet. A further reduction to less than 5% of total energy intake is suggested for additional health benefits (7).\n
+    •	Keeping salt intake to less than 5 g per day (equivalent to sodium intake of less than 2 g per day) helps to prevent hypertension, and reduces the risk of heart disease and stroke in the adult population (8).\n
+    •	WHO Member States have agreed to reduce the global population’s intake of salt by 30% by 2025; they have also agreed to halt the rise in diabetes and obesity in adults and adolescents as well as in childhood overweight by 2025 (9, 10).\n
+    </string>
+
+    <string name="overview_body">
+        Consuming a healthy diet throughout the life-course helps to prevent malnutrition in all its forms as well as a range of noncommunicable diseases (NCDs) and conditions. However, increased production of processed foods, rapid urbanization and changing lifestyles have led to a shift in dietary patterns. People are now consuming more foods high in energy, fats, free sugars and salt/sodium, and many people do not eat enough fruit, vegetables and other dietary fibre such as whole grains.
+The exact make-up of a diversified, balanced and healthy diet will vary depending on individual characteristics (e.g. age, gender, lifestyle and degree of physical activity), cultural context, locally available foods and dietary customs. However, the basic principles of what constitutes a healthy diet remain the same.
+    </string>
+
+    <string name="calval">
+        <b>Calories in Fruits per 100 Grams : </b>\n\n
+        Calories in Apple 56 \n
+        Calories in Avocado Pear 190 \n
+        Calories in Banana 95 \n
+        Calories in Chickoo 94 \n
+        Calories in Cherries 70 \n
+        Calories in Dates 281 \n
+        Calories in Grapes Black 45 \n
+        Calories in Guava 66 \n
+        Calories in Kiwi Fruit 45 \n
+        Calories in Lychies 61 \n
+        Calories in Mangoes 70 \n
+        Calories in Orange 53 \n
+        Calories in Orange juice 100ml 47 \n
+        Calories in Papaya 32 \n
+        Calories in Peach 50 \n
+        Calories in Pears 51 \n
+        Calories in Pineapple 46 \n
+        Calories in Plums 56 \n
+        Calories in Strawberries 77 \n
+        Calories in Watermelon 26 \n
+        Calories in Pomegranate 77 \n\n\n
+        <b>Calories in Vegetables per 100 Grams : </b>\n
+        Calories in Broccoli 25 \n
+        Calories in Brinjal 24 \n
+        Calories in Cabbage 45 \n
+        Calories in Carrot 48 \n
+        Calories in Cauliflower 30 \n
+        Calories in Fenugreek (Methi) 49 \n
+        Calories in French beans 26 \n
+        Calories in Lettuce 21 \n
+        Calories in Mushroom 18 \n
+        Calories in Onion 50 \n
+        Calories in Peas 93 \n
+        Calories in Potato 97 \n
+        Calories in Spinach 100g \n
+        Calories in Spinach 1 leaf \n
+        Calories in Tomato 21 \n
+        Calories in Tomato juice 100ml 22 \n
+        Calories in Cereals per 100 Grams \n
+        Calories in Bajra 360 \n
+        Calories in Maize flour 355 \n
+        Calories in Rice 325 \n
+        Calories in Wheat flour 341\n\n\n
+        <b>Calories in Breads per piece : </b>\n
+        1 medium chapatti 119\n
+        1 slice white bread 60 \n
+        1 paratha (no filling) 280 \n\n\n
+        <b>Calories in Milk and Milk Products per cup : </b>\n
+        Calories in Butter 100gms. 750 \n
+        Calories in Buttermilk 19 \n
+        Calories in Cheese 315 \n
+        Calories in Cream 100gms. 210 \n
+        Calories in Ghee 100gms 910 \n
+        Calories in Milk Buffalo 115 \n
+        Calories in Milk Cow 100 \n
+        Calories in Milk Skimmed 45 \n
+        Calories in Other Items \n
+        Calories in Sugar 1 tbsp 48 \n
+        Calories in Honey 1 tbsp 90 \n
+        Calories in Coconut water 100 ml 25 \n
+        Calories in Coffee 40 \n
+        Calories in Tea 30 \n
+    </string>
+    <string name="exercise_body_1">
+        \n
+        1)U can be in shape and u can have control on your weight.\n
+        2)Keeps u a miles away from Disease and other health conditions.\n
+        3)Physical Activities helps u in improving your mood.\n
+        4)It refreshes u a lot and gives u a energy boost.\n
+        5)It makes your sex life smooth and comfortable.\n
+        6)It helps you in getting better and deepen sleep.\n
+        7)Exercise makes you happy and provides a great fun.\n
+        8)Reduces the risk of Heart problems.\n
+        9)It helps you to quit smoking.\n
+        10)It helps to maintain sugar levels in your body.\n
+        11)helps in boosting your mind power,learning power and other skills.\n
+        12)Makes your muscles and bones grow more stronger.\n
+        13)It helps in keeping you away from cancers like diseases.\n
+        14)Increases your life expectancy.\n
+        15)Helps you in gaining confidence.\n
+    </string>
+
+    <string name="exercise_body_2">
+        \n
+        * Begin your journey from walking and you can calculate the number of steps by clicking above.\n
+        * Increase your pace daily and set your goals.\n
+        * Maintain your healthy diet.\n
+        * Maintain consistency and establish a routine.\n
+        * Make a new record every week of every exercise.\n
+        * Doing cardio will help you to loose weight rapidly and safely.\n
+        * Don’t over push yourself otherwise it may cause you angry.\n
+        * If you are not getting any results consult a trainer.\n
+        * Don’t take more calories(if u wanted to know how much calories you should intake you can refer healthy diet section).\n
+        * Effects would be observed in 4 weeks not in a single day so keep going.\n
+        * Enjoy your workout don’t take it as pressure accept it as a mandatory part of your life.\n
+        * After workout stretching must be done.\n
+        * Lift light weight dumbbells at an early stage.\n
+        * Work on one muscle per day.\n
+        * Start rewarding yourself to make new record every week.\n
+        * Don’t do cardio more than 30 minutes as it affects and causes muscle loss.
+    </string>
+
+    <string name="aboutus_body">
+        We care for you! And that is why we have curated Care For Me. The concept behind Care For Me is a gift for people
+        who like to keep themselves fit and healthy. This app is a one stop solution where you get
+        access to all your health data, diet plan, fitness regime, mental health, cleanliness and more.
+        We\'ve rounded up some of the best health accessories that match your needs! \n\n\n
+
+        Key features:\n\n
+
+        - Calculate your BMI and other parameters on the go!\n
+        - Easily access to the calculation of BMR.\n
+        -You can get to know number of steps you walked at a time.\n
+        -It records your chores to ensure you don\'t forget any and keep your house clean.\n
+        -It contains Meditation timer which tells you how much time you do and contains alarm which tells you that you have done it.\n\n\n
+
+        We\'re continuously looking out for ways to improve Care For Me. Let us know how we can improve by giving us your valuable feedback. And do not forget to leave us a review or rating!\n
+        (*) Developed by:-\n
+        \t\t Harshit Shukla,\n
+        \t\t Siddhartha Bhattacharjee,\n
+        \t\t Priyanshu,\n
+        \t\t Ragul S.
+    </string>
+
+    <string name="meditation_bpdy1">
+        \n
+        1)The stress that is having in a person can be freed by meditation,it provides the calmness to body,\n
+        2)In case a person is disturbed ,tensed,sad,worried or stressful then he should meditate so that he can come out of that situation and can think the solution of the problems and can relax his inner peace.\n
+        3)Meditation is very easy practice,it does not require any thing or equipment.\n
+        4)Meditation can be practiced at any place whether we are walking,waiting,meeting,riding cabs and more.\n
+        5)It helps a person to control anxiety and pressure.\n
+        6)It helps to promote the emotional health and boosts slf awareness.\n
+        7)It helps an individual in reducing memory loss as he grows up.\n
+        8)It helps to fight us with addictions.\n
+        9)It increases the kindness, being polite and patience in a person.\n
+        10)It supports in decreasing the blood pressure.\n
+        11)It helps you to loose weight safely.\n
+        12)It helps in making healthy nervous system.
+    </string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="ordered_list">
+        \n
+        1)Well Being helps in boosting your mental and physical health.\n
+        2)Well Being helps in prevention from approaching diseases and other heart problems.\n
+        3)It helps in increasing the psychology,neuroscience and measurement theory and advancing it.\n
+        4) Well being is connected to numerous health, job, family, and economically related benefits.\n
+        5) Environmental and social resources for health can include various things like peace, economic security, a stable ecosystem, and safe housing.\n
+        6)  Well Being includes following types:-\n
+        •	Emotional well-being.\n
+        •	Psychological well-being.\n
+        •	Physical well-being.\n
+        •	Life satisfaction.\n
+        •	Domain specific satisfaction.\n
+        •	Engaging activities and work.\n
+        •	Social well-being.\n
+        •	Development and activity.\n
+        •	Economic well-being.\n
+        7) Self-acceptance:- It is a satisfaction or happiness with an individual. This includes an awareness of a person’s strengths and weaknesses. It results in an individual feeling that they are of unique worth.\n
+    </string>
+
+    <string name="homeclean_body">
+        \n
+        * Install smoke alarms in your houses and change the batteries every year.\n
+        * Keep your floor free from toys,shoes,clothing and other stuffs.\n
+        * Make sure you get walls painted every year as it will decrease the chances of spreading diseases and insects giving birth.\n
+        * Fix the leakage taps,walls,tiles and get it repaired.\n
+        * Throw used packets ,cups, rags in garbage.\n
+        * Make sure you make everything planned and in place.
+    </string>
+
+    <string name="homeclean2">
+        \n
+        * Don’t wear too long or too short sleeves clothes.\n
+        * Make sure carbon monoxide alarm is inatalled.\n
+        * Using stove or oven can harm you.\n
+        * Use safe pest or insect killing equipments.\n
+        * Never leave the food uncooked on stove.\n
+        * Kitchen exhaust fan or chimney must be there so that internal fumes and other harmful gases won’t able to harm you and can go out.
+    </string>
+
+    <string name="homeclean3">
+        \n
+        *   Remove toxic things from sink,garage or basement.\n
+        *	Change batteries of the equipement that are there every year.\n
+        *	Your chimney should be sweeped or cleaned every after a span of two months.\n
+        *	Dusting your home is very important part.\n
+        *	Your rugs should be clean.\n
+        *	Medicine cabinet must be organised and well kept.\n
+    </string>
+    <string name="foodsafe1">
+        \n
+        * Food Safety is a major part of the health,  It affects the survival, well-being, livelihood and productivity of individuals and eventually societies.\n
+        * Borne diseases indicates the public health burden and challenge.\n
+        * In the South-East Asia Region, nearly 150 million people fell ill with food borne diseases in 2010, which led to 175 000 deaths.\n
+        * Overuse of antimicrobials in veterinary and human medicine has led to antimicrobial resistance, which has now become one of the main threats to modern medicine.\n
+        * Street food, which is commonly consumed in all parts of the country, often poses a health hazard as it is contaminated with infectious viruses and bacteria, leading to various food borne diseases.\n
+        * The theme of the World Health Day 2015 was \‘From Farm to Plate, Make Food Safe\’, emphasizing the importance of looking at the entire food chain to make food safe. In India, food safety has obvious and direct linkages with the Swachh Bharat (Clean India) initiative of the Prime Minister.\n
+        * The Food Safety and Standards Authority of India (FSSAI) has been established under Food Safety and Standards , 2006 which consolidates various acts and orders that have hitherto handled food related issues in various Ministries and Departments. \n
+        * To get to more about food safety click on the link to understand.
+    </string>
+
+    <string name="foodsafe2">
+        \n
+        *Store the food at safe temperatures i.e nor too hot nor too hot.Keep it at dry and away from sunlight.\n
+        *Keep your food clean and make it by using proper cleanliness.\n
+        *The food should be cooked thoroughly and well heated.\n
+        *Try your level best to use purified water and other raw materials in making a dish.\n
+        *Try to refrigerate the food properly so that it won’t stinks and spoiled,it can prevent you from diahorrea or other food poisoning diseases.\n
+        *See the condition of the food whether it’s not rotten ,if so then throw in dustbin.\n
+        *Wash fruits and vegetables every after two days so that proper hygiene is maintained.\n
+    </string>
+    <string name="sanitation">
+        \n
+        * In schools or colleges when there is the access to the safe and clean water and bathrooms they are the in the greatest mood to study. \n
+        Since Education is the key to success as that Cleanliness and hygiene is the key is to bright future.\n
+        * As lots of pandaemic like covid 19, flu are spreading at the large scale so we should keep sanitization because viruses are attractive towards the untidy place so keep yourself and your suurounding clean and santitized.\n
+        * Cleaning a place or thing is not good enough just by cloth or duster you have to use detergent or soap to clean it because it kills bacteria and other micro organisms on it. \n
+        * Clean the high-touched surfaces regularly after few intervals like switches,remotes,tables etc.\n
+        * Do not eat, drink, breathe, or inject cleaning and disinfection products into your body or apply directly to your skin as they can cause serious harm.\n
+        * We should wear the gloves while cleaning or sanitizing the surface. \n
+        * Clean the surfaces around a sick person using disinfectants or detergents. \n
+        * Clean the carpets and floor using a vaccum cleaner so that all the dust will be extracted from it.\n
+    </string>
+
+    <string name="sanitation2">
+        \n
+        * Wash your hands frequently every after 45 mins. \n
+        * Bathing is the most important part that we should not neglect.\n
+        * Cleaning of the items and floor should be done everyday and using a proper named disinfectant or detergent.\n
+        * Wash your hands for 30seconds using good alcohol handwash or use sanitizer instead.\n
+        * Since pandemic is there use of mask is a must and must be thrown every after 6 hours of using it.\n
+        * Brush daily so that the cavities won’t take place in your teeth and you are free to chew.\n
+        * Use your handkerchief while you are sneezing or having cough so that the germs won’t be transferred.
+    </string>
+
+</resources>

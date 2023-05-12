@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_dark"
+    tools:context=".Yoga">
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="90dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="360dp"
+                    android:layout_height="320dp"
+                    app:srcCompat="@drawable/yoga" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MEDITATION"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/white"
+                android:foregroundTint="@color/white" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView30"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="The secret to the well-being of your mind and body is meditation. It will help you stay calm, energized, and focused. Daily meditation is a great habit to have. Meditate till the timer beeps. If you complete it, it will be longer next time. The goal is the progressive growth of meditation habits."-->
+<!--                android:textColor="@color/white" />-->
+
+            <View
+                android:id="@+id/divider32"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/white"
+                android:foregroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/timer_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="00 : 00"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="startTimer"
+                android:text="START TIMER" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="reset"
+                android:text="Reset" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView34"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Meditation:An easy,quick way to be calm"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="28sp" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/divider25"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:background="?android:attr/listDivider"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:foregroundTint="@color/white" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView35"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="@string/meditation_bpdy1"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView14"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="296dp"-->
+<!--                app:srcCompat="@drawable/logo_mlkit" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView36"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="WELLBEING"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="34sp" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/divider26"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:background="?android:attr/listDivider"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:foregroundTint="@color/white" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView41"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="@string/ordered_list"-->
+<!--                android:textColor="@color/white" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
